@@ -18,8 +18,8 @@ $user = UserInfo::getByID($c->getCollectionUserID());
 
 
 					<section class="announcement topics">
-						<ul class="announcement-list">
 <?php  if (count($pages) > 0): ?>
+						<ul class="announcement-list">
     <?php
 
     $includeEntryText = false;
@@ -138,17 +138,12 @@ $user = UserInfo::getByID($c->getCollectionUserID());
 							</li>
 
 	<?php endforeach; ?>
-<?php  else: ?>
-							<li><p><?php echo t('No announcements to this news.')?></p></li>
-<?php  endif; ?>
 						</ul><!-- end .ccm-page-list -->
+<?php  else: ?>
+						<div class="ccm-block-page-list-no-pages"><?php echo empty($noResultsMessage) ? t('No announcements to this news.') : h($noResultsMessage); ?></div>
+<?php  endif; ?>
 
 					</section>
-
-    <?php if (count($pages) == 0): ?>
-        <div class="ccm-block-page-list-no-pages"><?php echo h($noResultsMessage)?></div>
-    <?php endif;?>
-
 
 <?php if ($showPagination): ?>
     <?php echo $pagination;?>

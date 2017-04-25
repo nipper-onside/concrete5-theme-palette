@@ -29,8 +29,8 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
 
 						</div>
 						<div class="announcement-container">
-							<ul class="centered">
 <?php  if (count($pages) > 0): ?>
+							<ul class="centered">
     <?php foreach ($pages as $page):
 
 		// Prepare data for each page being listed...
@@ -97,18 +97,13 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
 								<li><a href="<?php echo $url ?>" target="<?php echo $target ?>"><time datetime="<?php echo $datetime; ?>"><?php echo $date; ?></time> <?php echo $title ?></a><?php echo $new ?></li>
 
 	<?php endforeach; ?>
-<?php  else: ?>
-								<li><p><?php  echo t('No announcements to this news.')?></p></li>
-<?php  endif; ?>
 							</ul>
+<?php  else: ?>
+							<div class="ccm-block-page-list-no-pages"><?php echo empty($noResultsMessage) ? t('No announcements to this news.') : h($noResultsMessage); ?></div>
+<?php  endif; ?>
 						</div><!-- end .ccm-page-list -->
 
 					</section>
-
-    <?php if (count($pages) == 0): ?>
-        <div class="ccm-block-page-list-no-pages"><?php echo h($noResultsMessage)?></div>
-    <?php endif;?>
-
 
 <?php if ($showPagination): ?>
     <?php echo $pagination;?>
