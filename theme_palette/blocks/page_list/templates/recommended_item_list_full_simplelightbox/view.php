@@ -133,7 +133,18 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
 
 
 <?php if ($showPagination): ?>
-    <?php echo $pagination;?>
+    <?php //echo $pagination;?>
+    <?php
+    $pagination = $list->getPagination();
+    if ($pagination->getTotalPages() > 1) {
+        $options = array(
+            'prev_message' => t('Previous'),
+            'next_message' => t('Next'),
+            'css_container_class' => 'pl-pagination pagination',
+        );
+        echo $pagination->renderDefaultView($options);
+    }
+    ?>
 <?php endif; ?>
 
 <?php } ?>
