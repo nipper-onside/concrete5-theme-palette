@@ -15,7 +15,7 @@
 	width: 100%;
 	margin: 30px auto;
 	padding: 30px 0;
-	font-family: @font-family-title;
+	font-family: @headings-type-font-family;
 	color: @main-theme-color;
 	font-size: 1.3em;
 	font-weight: normal;
@@ -472,7 +472,7 @@ h6,
 		margin: 0 0 15px;
 		padding: 0;
 		color: @body-text-sub-color;
-		font-family: @font-family-title;
+// 		font-family: @font-family-title;
 		font-size: @heading-line-font-size;
 		position: relative;
 		&:after {
@@ -552,6 +552,36 @@ h6,
 		text-transform: none;
 		border-bottom: dotted 1px @page-background-color;
 	}
+}
+
+h1,
+.h1 {
+	font-family: @h1-type-font-family;
+}
+
+h2,
+.h2 {
+	font-family: @h2-type-font-family;
+}
+
+h3,
+.h3 {
+	font-family: @h3-type-font-family;
+}
+
+h4,
+.h4 {
+	font-family: @h4-type-font-family;
+}
+
+h5,
+.h5 {
+	font-family: @h5-type-font-family;
+}
+
+h6,
+.h6 {
+	font-family: @h6-type-font-family;
 }
 
 .page-title {
@@ -668,7 +698,7 @@ h6,
 	display: block;
 	padding: 20px 0;
 	color: @title-thin-type-color;
-	font-family: @font-family-base;
+	font-family: @title-thin-type-font-family;
 	font-size: @title-thin-type-font-size;
 	font-weight: 100 !important;
 	line-height: 1.4;

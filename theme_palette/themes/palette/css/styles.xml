@@ -67,6 +67,7 @@
         <style name="Heading 6" variable="h6" type="type" />
     </set>
 	<set name="Global Navigation">
+		<style name="Global Navi Text" variable="global-navigation" type="type" />
 		<style name="Global Navi Background Color" variable="global-navigation-background" type="color" />
 		<style name="Global Navi Border Color" variable="global-navigation-border" type="color" />
 		<style name="Global Navi Background Link Color" variable="global-navigation-background-link" type="color" />
