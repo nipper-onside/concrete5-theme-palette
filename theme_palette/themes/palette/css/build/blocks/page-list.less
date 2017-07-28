@@ -778,7 +778,17 @@
 	}
 }
 
-.ccm-block-page-list-page-entry {
+.ccm-block-page-list-page-entry,
+.ccm-block-page-list-page-entry-horizontal {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px @main-border-color;
+
+	.ccm-block-page-list-title {
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+
 	a {
 		&.ccm-block-page-list-read-more {
 			display: inline-block;
@@ -797,6 +807,10 @@
 				box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
 			}
 		}
+	}
+
+	.ccm-block-page-list-page-entry-thumbnail {
+		margin-bottom: 15px;
 	}
 }
 

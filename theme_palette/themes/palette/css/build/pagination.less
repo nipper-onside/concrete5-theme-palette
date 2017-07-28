@@ -76,7 +76,7 @@ div.ccm-pagination-wrapper {
 						background-color: @main-background-color;
 						content: "\f105";
 						position: absolute;
-						top: .2em;
+						top: .22em;
 						right: .2em;
 					}
 				}
@@ -135,7 +135,7 @@ div.ccm-pagination-wrapper {
 						background-color: @main-background-color;
 						content: "\f104";
 						position: absolute;
-						top: .2em;
+						top: .22em;
 						left: .2em;
 					}
 				}
@@ -163,6 +163,52 @@ div.ccm-pagination-wrapper {
 				border: none;
 				border-radius: 0;
 				background: none;
+			}
+		}
+	}
+
+	.pl-pagination {
+		&.pagination {
+
+			> li {
+
+				&.next {
+					a,
+					span {
+						padding-right: 24px;
+						&:hover,
+						&:focus {
+							&:after {
+								background: none;
+							}
+						}
+						&:after {
+							background: none;
+							position: absolute;
+							top: .22em;
+							right: 4px;
+						}
+					}
+
+				}
+				&.prev {
+					a,
+					span {
+						padding-left: 24px;
+						&:hover,
+						&:focus {
+							&:before {
+								background: none;
+							}
+						}
+						&:before {
+							background: none;
+							position: absolute;
+							top: .22em;
+							left: 4px;
+						}
+					}
+				}
 			}
 		}
 	}
