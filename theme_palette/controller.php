@@ -23,7 +23,7 @@ class Controller extends Package
 
 	protected $pkgHandle = 'theme_palette';
 	protected $appVersionRequired = '5.7.3';
-	protected $pkgVersion = '2.0.3';
+	protected $pkgVersion = '2.0.4';
 	protected $pkgAllowsFullContentSwap = true;
 
 	public function getPackageDescription()
