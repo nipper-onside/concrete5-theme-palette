@@ -16,7 +16,8 @@ $this->inc('inc/header.php');
 										$bt = BlockType::getByHandle('search');
 										$bt->controller->title = t('Search');
 										$bt->controller->buttonText = t('Search');
-										$bt->render('templates/palette_search');
+										$bt->controller->resultsURL = h('search');
+										$bt->render();
 									?>
 								</div>
 							</div>
