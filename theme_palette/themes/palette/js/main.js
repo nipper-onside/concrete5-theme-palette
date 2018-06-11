@@ -1,10 +1,10 @@
 /*----------------------------------------------
 
 	Theme Name: concreat5_site_la_palette
-	Description: Common JavaScript　04-08-2016 (mm-dd-yyyy)
+	Description: Common JavaScript 06-11-2018 (mm-dd-yyyy)
 	Author: Shin'ichi Nakane
 	Author URI: http://www.onside.com/about/
-	Version: ver. 1.0
+	Version: ver. 1.1
 
 ----------------------------------------------*/
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 });
 
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
