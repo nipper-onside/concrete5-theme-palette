@@ -53,7 +53,6 @@ $c = Page::getCurrentPage();
 /*** STEP 1 of 2: Determine all CSS classes (only 2 are enabled by default, but you can un-comment other ones or add your own) ***/
 
 $niCount = count($navItems);
-$niCountSub = count($navItems->hasSubmenu);
 
 foreach ($navItems as $ni) {
 
